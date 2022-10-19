@@ -555,12 +555,9 @@ button.white{
 }
 
 
-
-
-
 /* Shop Page */
 
-#shop-page-header{
+#page-header{
     background-image: url(img/banner/b1.jpg);
     width: 100%;
     height: 40vh;
@@ -572,7 +569,7 @@ button.white{
     padding: 14px;
 }
 
-#shop-page-header h2,#shop-page-header p{
+#page-header h2,#page-header p{
     color: #fff;
 }
 
@@ -667,6 +664,80 @@ button.white{
     font-size: 1.2rem;
     color: #1a1a1a;
 }
+
+/* Blog page */
+
+#page-header.blog-header{
+    background-image: url(img/banner/b19.jpg);
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-box .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog .blog-box .blog-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-box .blog-details{
+    width: 50%;
+}
+
+#blog .blog-box .blog-details a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-box .blog-details a::after{
+    content:'';
+    width:50px;
+    height: 1px;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 8px;
+    right: -60px;
+}
+
+#blog .blog-box .blog-details a:hover{
+    color: rgb(252, 189, 0);
+}
+
+#blog .blog-box .blog-details a:hover::after{
+    background-color: rgb(252, 189, 0);
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbca;
+    z-index: -1;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
 
 /* Media Queries */
 
@@ -874,6 +945,26 @@ button.white{
         margin-top: 5px;
     }
 
+    /* Blog page */
+
+    #blog{
+        padding:100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-box .blog-img ,#blog .blog-box .blog-details {
+        width: 100%;
+        margin-right:0px;
+        margin-top: 20px;
+    }
+
+    #blog .blog-box h1 {
+        top: -21px;
+    }
 }
 
 @media screen and (max-width:400px) {
