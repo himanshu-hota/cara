@@ -733,8 +733,49 @@ button.white{
     z-index: -1;
 }
 
+/* About page */
 
+#page-header.about-header{
+    background-image: url(img/about/banner.png);
+}
 
+#about-head{
+    display:flex;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about-head div{
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-head div h2{
+    font-size: 3.5rem;
+    color: #088178;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
 
 
 /* ------------------------------------------------------------------------------------- */
@@ -793,10 +834,11 @@ button.white{
     #feature {
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 
     #feature .fe-box{
-        margin: 15px 15px;
+        margin: 0px 12px;
     }
 
     #products .product-container{
@@ -880,7 +922,7 @@ button.white{
     }
     
     #feature .fe-box {
-        width: 250px;
+        width: 100px;
     }
 
     #news-letter p {
@@ -964,6 +1006,37 @@ button.white{
 
     #blog .blog-box h1 {
         top: -21px;
+    }
+
+    /* About section */
+
+    #about-head{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    #about-head div {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    #about-app h1{
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    #about-head div h2 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    #about-app .video{
+        width: 100%;
     }
 }
 
