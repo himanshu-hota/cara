@@ -883,6 +883,131 @@ button.white{
     font-size: 18px;
 }
 
+/* Cart Section */
+
+#cart{
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    text-align: center;
+    width: 100px;
+}
+
+#cart table td:nth-child(2){
+    text-align: center;
+    width: 150px;
+}
+
+#cart table td:nth-child(3){
+    text-align: center;
+    width: 250px;
+}
+
+#cart table td:nth-child(4),#cart table td:nth-child(5),#cart table td:nth-child(6){
+    text-align: center;
+    width: 250px;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+    
+}
+
+#cart table td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+ 
+#cart table tbody tr td{
+    padding-top:15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+}
+
+#coupon h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button{
+    background-color: #088178;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom:20px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    border-right: none;
+    border-left: none;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#p1,#p2,#p3{
+    transition: 0.5s;
+}
+
 /* ------------------------------------------------------------------------------------- */
 
 /* Media Queries */
@@ -1187,6 +1312,20 @@ button.white{
     #form-details .people{
         width: 100%;
         margin-top: 50px;
+    }
+
+    /* Cart Page */
+
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #subtotal button,#coupon button {
+        font-size: 16px;
+    }
+
+    #cart-add #coupon,#cart-add #subtotal{
+        width: 100%;
     }
 
 }

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header section -->
+
     <section id="header">
       <a href="#"><img src="img/logo.png" class="logo" alt="logo" /></a>
 
@@ -26,10 +28,10 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li id="lg-bag" >
-            <a href="cart.html" ><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a>
           </li>
         </ul>
       </div>
@@ -40,103 +42,89 @@
       </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- Page Header Section -->
 
     <section id="page-header" class="about-header">
-      <h2>#knowUs</h2>
+      <h2>#lets_talk</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-      <img src="img/about/a6.jpg" alt="about-img" />
-      <div>
-        <h2>Who are we?</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          earum minus sint rerum animi quasi totam culpa quod alias! Ea qui quo
-          nulla animi repudiandae magni optio fugiat temporibus Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Qui quibusdam enim nisi
-          hic modi exercitationem optio suscipit nesciunt expedita iure, iste
-          unde aspernatur architecto quos ratione nobis a veniam officia!
-        </p>
+    <!-- Cart section -->
 
-        <abbr title=""
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-          error delectus mollitia atque accusamus harum, molestias vel eius,
-          sapiente laudantium asperiores, at labore nemo dolore! Nemo, quod
-          esse. Sunt, ullam.</abbr
-        >
-        <br />
-        <br />
+    <section id="cart" class="section-p1">
+        <table width="100%" >
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="p1">
+                    <td><a href="#"><i id="d1" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt="shirt"></td>
+                    <td>Carton Astronaut T-Shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
 
-        <marquee bgcolor="#ccc" loo="-1" width="100%" scrollamout="5"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          eaque adipisci debitis error et odit praesentium laborum voluptatibus
-          necessitatibus, tenetur dicta saepe velit enim illo consequuntur iste
-          recusandae quae quasi?</marquee
-        >
-      </div>
+                <tr id="p2">
+                    <td><a href="#"><i id="d2" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt="shirt"></td>
+                    <td>Nature Lover T-shirt</td>
+                    <td>$150.61</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$150.61</td>
+                </tr>
+
+                <tr id="p3">
+                    <td><a href="#"><i id="d3" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f6.jpg" alt="shirt"></td>
+                    <td>Duo tone Jacket</td>
+                    <td>$388.71</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$388.71</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <!-- Download app -->
+    <!-- Cart add -->
 
-    <section id="about-app" class="section-p1">
-      <h1>DOWNLOAD OUR <a href="#">App</a></h1>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button type="submit" class="normal">Apply</button>
+            </div>
+        </div>
 
-      <div class="video">
-        <video src="img/about/1.mp4" autoplay muted loop></video>
-      </div>
-    </section>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td class="price">$657.51</td>
+                </tr>
 
-    <!-- Features -->
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
 
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img src="img/features/f1.png" alt="feature-img" />
-        <h6>Free Shipping</h6>
-      </div>
-
-      <div class="fe-box">
-        <img src="img/features/f2.png" alt="feature-img" />
-        <h6>Online Order</h6>
-      </div>
-
-      <div class="fe-box">
-        <img src="img/features/f3.png" alt="feature-img" />
-        <h6>Save Money</h6>
-      </div>
-
-      <div class="fe-box">
-        <img src="img/features/f4.png" alt="feature-img" />
-        <h6>Promotions</h6>
-      </div>
-
-      <div class="fe-box">
-        <img src="img/features/f5.png" alt="feature-img" />
-        <h6>Happy Sale</h6>
-      </div>
-
-      <div class="fe-box">
-        <img src="img/features/f6.png" alt="" />
-        <h6>Support</h6>
-      </div>
-    </section>
-
-    <!-- News Letter -->
-
-    <section id="news-letter" class="section-p1 section-m1">
-      <div class="news-text">
-        <h4>Sign Up For Newsletters</h4>
-        <p>
-          Get E-mail updates about our latest shop and
-          <span>special offers</span>
-        </p>
-      </div>
-
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button id="sign-up" class="normal">Sign Up</button>
-      </div>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="price"><strong>$ 657.51</strong></td>
+                </tr>
+            </table>
+            <button type="submit" class="normal">Proceed to checkout</button>
+        </div>
     </section>
 
     <!-- Footer Section -->
