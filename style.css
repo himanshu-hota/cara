@@ -777,6 +777,111 @@ button.white{
     border-radius: 20px;
 }
 
+/* Contact us
+ */
+
+#contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span , #form-details span{
+    font-size: 12px;
+}
+
+#contact-details .details h2 , #form-details h2{
+    font-size: 30px;
+    line-height: 26px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size:16px;
+    padding-bottom: 10px;
+}
+
+#contact-details .details li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#contact-details .details li i{
+    padding-right: 5px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 16px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details iframe{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#form-details form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-details form input ,#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #088178 ;
+}
+
+#form-details form button{
+    background-color: #088178;
+    color: #cce7d0;
+}
+
+#form-details .people div{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+#form-details .people div p{
+    font-size: 18px;
+}
 
 /* ------------------------------------------------------------------------------------- */
 
@@ -911,6 +1016,21 @@ button.white{
         font-size: 1.8rem;
     }
 
+    /* Contact details */
+
+    #form-details {
+        padding:20px ;
+        align-items: flex-start;
+    }
+
+    #form-details form{
+        width: 55%;
+    }
+
+    
+    #form-details .people{
+        width: 40%;
+    }
 
 }
 
@@ -1038,6 +1158,37 @@ button.white{
     #about-app .video{
         width: 100%;
     }
+
+    /* Contact details */
+
+    #contact-details {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contact-details .map{
+        width: 100%;
+    }
+
+    #form-details{
+        flex-direction: column;
+    }
+
+    #form-details form{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #form-details .people{
+        width: 100%;
+        margin-top: 50px;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -1047,6 +1198,6 @@ button.white{
     }
 
     #news-letter .form input {
-        padding: 1.25rem;
+        padding: 0.4rem;
     }
 }
