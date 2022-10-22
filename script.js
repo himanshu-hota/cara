@@ -5,10 +5,7 @@
 const burgerMenu = document.querySelector('#bar');
 const navbar = document.querySelector('#navbar');
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 burgerMenu.addEventListener('click', () => {
     navbar.classList.toggle('activate');
 })
@@ -18,9 +15,6 @@ burgerMenu.addEventListener('click', () => {
 
 const mainImg = document.querySelector('#main-product');
 const imgs = document.querySelectorAll('.small-img')
-
-<<<<<<< HEAD
-=======
 
 //  --------------------------Cart Page-------------------------
 
@@ -32,7 +26,7 @@ const updatePrice = (price) => {
 }
 
 // --------------------------Universal-------------------------
->>>>>>> master
+
 const onClick = (event) => {
     switch (event.srcElement.id) {
         case 'd-img-1':
@@ -48,19 +42,6 @@ const onClick = (event) => {
             mainImg.src = event.target.src;
             break;
         case 'd1':
-<<<<<<< HEAD
-            const p1 = document.querySelector('#p1')
-            p1.remove();
-            break;
-        case 'd2':
-            const p2 = document.querySelector('#p2')
-            p2.remove();
-            break;
-        case 'd3':
-            const p3 = document.querySelector('#p3')
-            p3.remove();
-            break;
-=======
             const p1 = document.querySelector('#p1');
             updatePrice(118.19);
             p1.remove();
@@ -75,8 +56,7 @@ const onClick = (event) => {
             updatePrice(388.71);
             p3.remove();
             break;
-            
->>>>>>> master
+
     }
 }
 
