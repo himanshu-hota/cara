@@ -5,7 +5,10 @@
 const burgerMenu = document.querySelector('#bar');
 const navbar = document.querySelector('#navbar');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 burgerMenu.addEventListener('click', () => {
     navbar.classList.toggle('activate');
 })
@@ -16,6 +19,20 @@ burgerMenu.addEventListener('click', () => {
 const mainImg = document.querySelector('#main-product');
 const imgs = document.querySelectorAll('.small-img')
 
+<<<<<<< HEAD
+=======
+
+//  --------------------------Cart Page-------------------------
+
+var totalPrice = document.querySelectorAll('.price');
+
+const updatePrice = (price) => {
+    totalPrice[0].innerText = (totalPrice[0].innerText - price).toFixed(2);
+    totalPrice[1].innerText = (totalPrice[1].innerText - price).toFixed(2);
+}
+
+// --------------------------Universal-------------------------
+>>>>>>> master
 const onClick = (event) => {
     switch (event.srcElement.id) {
         case 'd-img-1':
@@ -31,6 +48,7 @@ const onClick = (event) => {
             mainImg.src = event.target.src;
             break;
         case 'd1':
+<<<<<<< HEAD
             const p1 = document.querySelector('#p1')
             p1.remove();
             break;
@@ -42,6 +60,23 @@ const onClick = (event) => {
             const p3 = document.querySelector('#p3')
             p3.remove();
             break;
+=======
+            const p1 = document.querySelector('#p1');
+            updatePrice(118.19);
+            p1.remove();
+            break;
+        case 'd2':
+            const p2 = document.querySelector('#p2');
+            updatePrice(150.61);
+            p2.remove();
+            break;
+        case 'd3':
+            const p3 = document.querySelector('#p3');
+            updatePrice(388.71);
+            p3.remove();
+            break;
+            
+>>>>>>> master
     }
 }
 
