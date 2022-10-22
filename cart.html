@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&   display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="logo" /></a>
+
+      <div>
+        <ul id="navbar" class="openNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li id="lg-bag" >
+            <a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <!-- Page Header Section -->
+
+    <section id="page-header" class="about-header">
+      <h2>#lets_talk</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+
+    <!-- Cart section -->
+
+    <section id="cart" class="section-p1">
+        <table width="100%" >
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="p1">
+                    <td><a href="#"><i id="d1" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt="shirt"></td>
+                    <td>Carton Astronaut T-Shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+
+                <tr id="p2">
+                    <td><a href="#"><i id="d2" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt="shirt"></td>
+                    <td>Nature Lover T-shirt</td>
+                    <td>$150.61</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$150.61</td>
+                </tr>
+
+                <tr id="p3">
+                    <td><a href="#"><i id="d3" class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f6.jpg" alt="shirt"></td>
+                    <td>Duo tone Jacket</td>
+                    <td>$388.71</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$388.71</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Cart add -->
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button type="submit" class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td class="price">$657.51</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="price"><strong>$ 657.51</strong></td>
+                </tr>
+            </table>
+            <button type="submit" class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section id="footer" class="section-p1">
+      <div class="col">
+        <img src="img/logo.png" class="logo" alt="logo" />
+        <h4>Contact</h4>
+        <p><strong>Address :</strong> Shop no. 323,street no. 32, Raipur</p>
+        <p><strong>Phone :</strong> 9999999999</p>
+        <p><strong>Hours :</strong> 10:00 - 10:00 , Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Installl app</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="App-store" />
+          <img src="img/pay/play.jpg" alt="Play-store" />
+        </div>
+        <p>Secured Payment Gateway</p>
+        <img src="img/pay/pay.png" alt="Payment" />
+      </div>
+
+      <div class="copyright">
+        <p>2022,Himanshu Hota - Ecommerce Template</p>
+      </div>
+    </section>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b45c6d8a14.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
